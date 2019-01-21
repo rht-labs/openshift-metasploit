@@ -1,2 +1,2 @@
 db_connect -y /home/ocpuser/.msf4/database.yml
-workspace -a OpenShiftdb_c
+workspace -a OpenShift

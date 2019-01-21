@@ -20,7 +20,8 @@ USER root
 
 RUN curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall && \
     chmod 755 msfinstall && \
-    ./msfinstall
+    ./msfinstall && \
+    yum install --enablerepo=rhel-7-server-rpms -y net-tools
 
 COPY entrypoint.sh /usr/bin/entrypoint.sh
 RUN chmod 755 /usr/bin/entrypoint.sh && \
