@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: metasploit-redhat
+  labels:
+    app: metasploit-redhat
+spec:
+  containers:
+  - name: metasploit
+    image: [tenant]/metasploit-redhat:v0.1
+    command: ['sh', '-c', 'echo The Pod is running && sleep 6000']
+

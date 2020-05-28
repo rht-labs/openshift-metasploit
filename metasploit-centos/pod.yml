@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: metasploit-centos
+  labels:
+    app: metasploit-centos
+spec:
+  containers:
+  - name: metasploit
+    image: [tenant]/metasploit-centos:v0.1
+    command: ['sh', '-c', 'echo The Pod is running && sleep 6000']
+
