@@ -7,6 +7,6 @@ with CI/CD/DevOps pipelines
 ## Build Container Locally
 ```
 git clone https://github.com/rht-labs/openshift-metasploit.git
-cd openshift-metasploit/metasploit
-docker build -t openshift3/metasploit ./
+cd openshift-metasploit/metasploit-[redhat|centos]
+docker build -t openshift3/metasploit-[redhat|cento]:v0.1 ./
 ```
